@@ -1,5 +1,6 @@
 #include<stdio.h>
-int main(){
+int main()
+{
     int n,i,l=0,r=0,t,rev=0;
     scanf("%d",&n);
     for(i=n+1;r==0;i++)
@@ -30,6 +31,7 @@ int main(){
         {
             l=i;
             break;
+            
         }
     }
     if(r-n>n-l)
@@ -44,4 +46,5 @@ int main(){
     {
         printf("%d %d",l,r);
     }
+
 }
