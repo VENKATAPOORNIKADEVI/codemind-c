@@ -1,6 +1,7 @@
 #include<stdio.h>
-int main(){
-    int n,i,c=0,d=0,p=0;
+int main()
+{
+    int n,i,j,c=0,d=0,p=0;
     scanf("%d",&n);
     if(n==1)
     {
@@ -10,33 +11,33 @@ int main(){
     {
         if(n%i==0)
         {
-            c++;
-        }
-    }
-    if(c==1)
+            c++; 
+        } 
+        
+    } if(c==1)
     {
         while(n)
         {
-        d++;
-        if(n%10==2 || n%10==3 || n%10==5 || n%10==7 || n%10==9)
-        {
-            p++;
+            d++;
+            if(n%10==0||n%10==3||n%10==5|n%10==7)
+            {
+                p++;
+            }
+            else
+            {
+                break;
+            }
+            n/=10;
         }
-        else
-        {
-            break;
-        }
-        n/=10;
     }
+    if(n==0 && p==d)
+    {
+        printf("Mega Prime");
     }
-
-if(n==0 && p==d)
-{
-    printf("Mega Prime");
+    else
+    {
+        printf("Not Mega Prime");
+    }  
+    
 }
-else
-{
-    printf("Not Mega Prime");
-}
-}
-        
+    
